@@ -4,20 +4,156 @@
 <head>
 	<!-- Zusatzinformationen zum Dokument -->
 	<meta charset="utf-8"> <!-- Kodierung -->
-	<meta name="description" content=”Test">
+	<meta name="description" content="Test">
 	<!-- Dokumententitel -->
 	<title>Einführung in HTML</title>
 
 	<!-- Verweis auf externe Ressourcen -->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+	Hallo
+	aasdasd
+	Neue Änderung
+
+	<!-- Anker ("a") explizit setzen -->
+	<h1><a name="overview"></a> Übersicht</h1>
+
+	<!-- Elemente mit id-Attribut funktioneren auch -->
+	<h2 id="faq">FAQ</h2>
 	<h1>Webentwicklung</h1>
 	<p>
 		Willkommen auf der Webseite zur Veranstaltung
 		<b>Webentwicklung!</b>
 	</p>
+	<p>
+		<span class="tugend">Edel</span> sei der Mensch,
+		<span class="tugend">hilfreich</span> und
+		<span class="tugend">gut</span>.
+	</p>
+	<p>Grapes for white wine:</p>
+	<ul>
+		<li>
+			<a href="ri.htm" class="weisswein">Riesling</a>
+		</li>
+		<li>
+			<a href="ch.htm" class="weisswein">Chardonnay</a>
+		</li>
+		<li>
+			<a href="pb.htm" class="weisswein">Pinot Blanc</a>
+		</li>
+	</ul>
+	<p>Grapes for red wine:</p>
+	<ul>
+		<li>
+			<a href="cs.htm" class="rotwein">Cabernet Sauvignon</a>
+		</li>
+		<li>
+			<a href="me.htm" class="rotwein">Merlot</a>
+		</li>
+		<li>
+			<a href="pn.htm" class="rotwein">Pinot Noir</a>
+		</li>
+	</ul>
+	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius nemo officia delectus fugit illo corrupti, tenetur at
+	porro a. Animi laboriosam magni, alias non cum repudiandae veritatis voluptatum cupiditate expedita?
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero inventore harum impedit voluptatem adipisci est
+	doloribus praesentium obcaecati modi. Quaerat dicta omnis eaque incidunt quas reiciendis accusantium autem?
+	Delectus, nostrum?
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. At, illo facere ipsam incidunt voluptates beatae mollitia
+	officia expedita debitis laudantium, dolorem vel necessitatibus fugit nam ullam labore, corrupti itaque harum.
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iusto, autem porro, soluta sunt cupiditate
+	consequuntur fugiat dolore iure voluptate perferendis exercitationem asperiores deleniti voluptatibus quasi est
+	maiores temporibus dolores.
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, libero sapiente. Ex est natus quod recusandae ab
+	dolorem, voluptates, minima nulla iusto, quisquam illo quibusdam error impedit. Sequi, voluptatum! Sunt?
+	Das muss <strong>dringend</strong> erledigt werden.
+	<em>Du</em> wolltest doch <mark>mindestens</mark> 70m<sup>2</sup>! Das Wort <i>das</i> ist ein <b>Artikel</b>.
+	<small>Copyright <del>2014</del> 2015 Foo Inc.</small>
+
+	<img src="img/wikipedia.svg" alt="Wikipedia">
+
+	<!-- explizte Größenangaben verhindern Sprünge beim Nachladen von Ressourcen --> <img src="img/wikipedia.svg"
+		style="width: 235px; height: 55px" alt="Wikipedia">
+
+	<a href="http://de.wikipedia.org">Wikipedia</a>
+
+	<a href="http://wikipedia.org/" target="_blank">Wikipedia</a>
+	<small>öffnet http://wikipedia.org in einem neuen Tab http://wikipedia.org </small>
+
+	<ul>
+		<!-- li = "list item" -->
+		<li>Tick</li>
+		<li>Trick</li>
+		<li>Track</li>
+	</ul>
+	<ol>
+		<li>Schlafen</li>
+		<li>Essen</li>
+		<li>Lernen</li>
+	</ol>
+
+	<dl>
+		<dt>Coffee</dt>
+		<dd>- black hot drink</dd>
+		<dt>Milk</dt>
+		<dd>- white cold drink</dd>
+	</dl>
+
+	<table>
+		<tr>
+			<td>A1</td>
+			<td>A2</td>
+			<td>A3</td>
+		</tr>
+		<tr>
+			<td>B1</td>
+			<td>B2123123123</td>
+			<td>B3</td>
+		</tr>
+	</table>
+
+	<form action="#faq" method="GET"> 
+		<label for="stadt">Stadt:</label>
+		<input type="text" id="stadt" name="stadt" value="" required> <br />
+		    <input type="checkbox" id="newsletter" name="newsletter" checked /> 
+		    <label for="newsletter">Newsletter?</label> <br />
+		<label for="alter">Alter:</label>    
+		<input type="number" id="alter" name="alter" value="23" /> <br />
+		color: <input type="color"> <br />
+		date: <input type="date"> <br />
+		datetime-local: <input type="datetime-local"> <br />
+		email: <input type="email"><br />
+		month: <input type="month"> <br />
+		number: <input type="text" name="plz" minlength="5" maxlength="5" pattern="[0-9]{5}"><br />
+		range: <input type="range"><br />
+		search: <input type="search"><br />
+		tel: <input type="tel"><br />
+		time: <input type="time"><br />
+		url: <input type="url"><br />
+		week: <input type="week"><br />
+		<select name="produkte">
+			<optgroup label="Defensiv">
+				<option>Schild</option>
+				<option>Rüstung</option>
+			</optgroup>
+			<optgroup label="Offensiv">
+				<option>Schwert</option>
+				<option selected>Bogen</option>
+			</optgroup>
+			<optgroup label="Premium" disabled>
+				<option>Heiltrank</option>
+				<option>Tarnmantel</option>
+			</optgroup>
+		</select>
+		    <button type="submit">Absenden</button> 
+	</form>
+	<!-- ... -->
+	<a href="#overview">Zur Übersicht</a>
+
+	<a href="#faq">zu den FAQ</a>
+
 </body>
 
 </html>

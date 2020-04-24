@@ -1,0 +1,60 @@
+h1 {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+h2 {
+    font-family: "Times New Roman", serif;
+}
+
+h1 {
+    font-size: 30px;
+    /*absolute Größe */
+}
+
+h2 {
+    /*font-size: 12cm; /*absolute Größe */
+}
+
+h3 {
+    font-size: 120%;
+}
+
+p {
+    font-size: 1em;
+}
+
+a {
+    /* der noch nicht besucht Link ist blau und nicht unterstrichen */
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: red;
+}
+
+/* der besuchte Link ist rot*/
+
+a:active {
+    background-color: #FFFF00;
+}
+
+/* beim Clicken wird der Hintergrund gelb*/
+
+a:hover {
+    font-style: italic;
+}
+
+/* bei Hover wird der Link-Font italic*/
+
+a {  color: blue; } 
+a.weisswein { color: #FFBB00; } 
+a.rotwein { color: #800000; }
+
+span.tugend {
+    color: red;
+}
+
+h2#faq {
+    color: blue;
+}
