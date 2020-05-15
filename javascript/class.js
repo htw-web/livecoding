@@ -1,6 +1,6 @@
 let myLiteral = {
     // ihr Object INhalt
-    // empfehlenswerte 
+    // empfehlenswerte Variante
 };
 
 class Parent {
