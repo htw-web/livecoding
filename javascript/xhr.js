@@ -1,5 +1,5 @@
-var xhr = new XMLHttpRequest();
-var url = "https://maps.googleapis.com/maps/api/geocode/json?"
+let xhr = new XMLHttpRequest();
+let url = "https://maps.googleapis.com/maps/api/geocode/json?"
 url = url + "address=Wilhelminenhofstr 75, Berlin";
 url = url + "&key=AIzaSyDxdHXv5NxBOOveXK8Uy-Nf6FeYUBwhvpY";
 xhr.open("GET", url, true);
