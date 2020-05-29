@@ -11,8 +11,8 @@ xhr.onload = function (e) { // diese Funktion wird ausgefuehrt, wenn die Anfrage
     let data = this.response;
     let obj = JSON.parse(data); // auspacken
     console.log(obj);
-    if (this.status == 200) { // ok
-        if (obj.status != "ZERO_RESULTS") { // nicht null ergebnisse
+    if (this.status === 200) { // ok
+        if (obj.status !== "ZERO_RESULTS") { // nicht null ergebnisse
             let lat = obj.results[0].geometry.location.lat;
             let lng = obj.results[0].geometry.location.lng;
             console.log(lat + ", " + lng);
@@ -25,12 +25,13 @@ xhr.onload = function (e) { // diese Funktion wird ausgefuehrt, wenn die Anfrage
 };
 xhr.send();
 
-function requestHandler(response) { // diese Funktion wird ausgefuehrt, wenn die Anfrage erfolgreich war
-    let data = response;
-    let obj = JSON.parse(data); // auspacken
+function requestHandler(obj) { // diese Funktion wird ausgefuehrt, wenn die Anfrage erfolgreich war
+    //console.log(response);
+    //let data = response;
+    //let obj = JSON.parse(data); // auspacken
     console.log(obj);
-    if (this.status == 200) { // ok
-        if (obj.status != "ZERO_RESULTS") { // nicht null ergebnisse
+    if (obj.status === "OK") { // ok
+        if (obj.status !== "ZERO_RESULTS") { // nicht null ergebnisse
             let lat = obj.results[0].geometry.location.lat;
             let lng = obj.results[0].geometry.location.lng;
             console.log(lat + ", " + lng);
