@@ -1,7 +1,7 @@
 var xhr = new XMLHttpRequest();
     var url = "https://maps.googleapis.com/maps/api/geocode/json?"
     url = url + "address=Wilhelminenhofstr 75, Berlin";
-    url = url +"&key=….";     
+    url = url +"&key=AIzaSyDxdHXv5NxBOOveXK8Uy-Nf6FeYUBwhvpY";     
     xhr.open("GET", url, true);
 xhr.onerror = function() {// diese Funktion wird ausgefuehrt, wenn ein Fehler auftritt
         alert("Connecting to server with " + url + " failed!\n");
