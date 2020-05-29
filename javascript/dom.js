@@ -10,7 +10,11 @@ document.querySelector("p").style.display = "none";
 // ein HTML Element mit ID manipulieren, d.h. als Block-Element anzeigen
 document.querySelector("#demo").style.display = "block";
 
-let myObj = {"name": "John", "age": 31, "city": "New York"};
+let myObj = {
+    "name": "John",
+    "age": 31,
+    "city": "New York"
+};
 let myJSON = JSON.stringify(myObj);
 localStorage.setItem("textJSON", myJSON);
 
